@@ -11,11 +11,56 @@
   <!-- Custom Fonts -->
   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+    html{
+      background: url('{{c}}') no-repeat center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+  .information{
+      position:relative;
+      background-color:#DBEEFF;
+      width:70vw;
+      height:auto !important;
+      border: none !important;
+      display:inline-block;
+      margin:auto;
+    }
+    h3 {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+    body{
+      font-family: 'Open Sans', sans-serif;
+    }
+    ul{
+      list-style-type:none;
+    }
+    </style>
 </head>
 
 <body>
-  <h1>Hello! Your looking to go to {{a}}?</h1>
-  <p>Great! You should check out these places... {{b}}</p>
+  <div class="information">
+    <h1>Welcome to {{a}}</h1>
+    <h3>Here are some attractions you should check out:</h3>
+    <ul>
+    {% for place in b: %}
+      <li>{{place}}</li>
+      {% endfor %}
+    </ul>
+        <h3>Here are some restaurants that we reccomend:</h3>
+    <ul>
+        {% for place in d: %}
+          <li>{{place}}</li>
+      {% endfor %}
+    </ul>
+          <p>The currency in {{a}} is {{e}}</p>
+     
+  
+  </div>
 </body>
 
 </html>
