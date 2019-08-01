@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap');
+
+h1 {
+    font-size: 4em;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align:center;
+    color: #1481BA;
+}
+
+h2 {
+    font-size: 3em;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align:center;
+    color: #0A369D;
+}
+
+/*h3 {*/
+/*    font-size: 2em;*/
+/*    font-family: 'Montserrat Alternates', sans-serif;*/
+/*    text-align:center;*/
+/*    color: #0A369D;*/
+/*}*/
+
+body {
+    text-align:center;
+}
+
+select {
+    font-size: 32px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+input {
+    font-size: 32px;
+    border-image: 0;
+    border-radius: 5px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+form {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #1481BA;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
