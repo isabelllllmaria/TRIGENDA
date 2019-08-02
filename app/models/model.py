@@ -9,7 +9,7 @@ def my_destination(city):
     elif city == "Chicago":
         return["Millennium Park", "Navy Pier", "Cloud Gate", "Willis Tower", "Grant Park", "Magnificent Mile"]
     elif city == "Hong Kong":
-        return["Hong Kong Disneyland", "Ocean Park (great for teens)", "Tian Tan Buddha", "Avenue of Stars", "Sky 100 Hong Kong Observation Deck"]
+        return["Hong Kong Disneyland (great for kids)", "Ocean Park (great for teens)", "Tian Tan Buddha", "Avenue of Stars", "Sky 100 Hong Kong Observation Deck"]
     elif city == "Rome":
         return["Colosseum", "St. Peter's Basilica", "Vaitcan Museums", "Sistine Chapel", "Piazza Navona", "Pantheon"]
     elif city == "Sydney":
@@ -17,7 +17,7 @@ def my_destination(city):
     elif city == "Santo Domingo":
         return["Alcazar de Colon", "Basilica Cathedral of Santa Maria la Menor", "National Pantheon of the Dominican Republic"]
     elif city == "London":
-        return["Big Ben", "The Eye", "Tower of London", "Tower Bridge", "Buckingham Palace", "Wax Museum"]
+        return["Big Ben", "The Eye", "Tower of London", "Tower Bridge", "Buckingham Palace", "The Wax Museum"]
     elif city == "Paris":
         return["Eiffel Tower", "The Louvre", "Notre Dame", "Arc de Triomphe", "Palace of Versilles", "Disneyland Paris (great for kids)", "Ile Saint-Louis"]
     elif city == "Casablanca":
@@ -94,5 +94,25 @@ def my_currency(city):
         return "Moroccan Dirham: MAD = 0.10 USD($)"
 
 
-
-    
+def my_hotels(city):
+    print("function running")
+    if city == "Madrid":
+        return["The Pavilions Madrid", "Ibis Madrid Aeropuerto Barajas", "Hotel Europa", "Melia Madrid Princesa", "Novotel Madrid Cetner"]
+    elif city == "New York City":
+        return["Artezen Hotel", "Hitlon Garden Inn Times Square", "WestHouse Hotel New York", "Hyatt Union Square New York"]
+    elif city == "Chicago":
+        return["Hampton Inn & Suites Chicago", "Hampton Inn Chicago McCormick Place", "Cambria Hotel Chicago Magnificent Mike", "The Talbott Hotel"]
+    elif city == "Hong Kong":
+        return["Regal Jowloon Hotel", "Royal Plaza Hotel", "Courtyard Hong Kong", "Harbour Grand Hong Kong"]
+    elif city == "Rome":
+        return["palazzo Baj Guest House in Trastevere", "Hotel Raffaello", "Hotel Italia", "Inn Urbe Colosseo"]
+    elif city == "Sydney":
+        return["Shangri-La Hotel Sydney", "Four Seasons Hotel Sydney", "Ovolo 1888 Darling Harbour", "The Grace Hotel Sydney", "Amora Hotel Jamison Sydney"]
+    elif city =="Santo Domingo":
+        return["Novus Plaza Hodelpa", "Barcelo Santo Domingo", "Catalonia Santo Domingo", "Sheraton Santo Domingo", "Boutique Hotel Palacio"]
+    elif city == "London": 
+        return["Park Grand London Kensington", " Travelodge London City Hotel", "The Tower Hotel", "Lincoln Plaza London, Curio Collection by Hilton"]
+    elif city == "Paris":
+        return["Hotel Cecilia Paris", "Hotel du Printemps", "Les Jardins de Mademoiselle", "Hotel de L'Union", "Hotel International"]
+    elif city == "Casablanca":
+        return["Le Casablanca Hotel", "Four Seasons Hotel Casablanca", "Sofitel Casablanca Tour Blanche", "MELLIBER Appart Hotel"]

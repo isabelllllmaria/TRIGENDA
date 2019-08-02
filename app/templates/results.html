@@ -22,7 +22,9 @@
     }
   .information{
       position:relative;
-      background-color:#DBEEFF;
+      opacity: .6;
+      filter: alpha(opacity= 60);
+      background-color: #ffffff;
       width:70vw;
       height:auto !important;
       border: none !important;
@@ -39,11 +41,20 @@
     ul{
       list-style-type:none;
     }
+    p {
+      color: blue;
+    }
+    li {
+      color: blue;
+    }
     </style>
 </head>
 
 <body>
   <div class="information">
+    <br>
+    <br>
+    <a href= "/index">Home Page</a>
     <h1>Welcome to {{a}}</h1>
     <h3>Here are some attractions you should check out:</h3>
     <ul>
@@ -51,13 +62,20 @@
       <li>{{place}}</li>
       {% endfor %}
     </ul>
-        <h3>Here are some restaurants that we reccomend:</h3>
+        <h3>Here are some restaurants that we recommend:</h3>
     <ul>
         {% for place in d: %}
           <li>{{place}}</li>
       {% endfor %}
     </ul>
           <p>The currency in {{a}} is {{e}}</p>
+          
+        <h3>Here are some hotels we reccomend you stay at:</h3>
+    <ul>
+    {% for place in f: %}
+      <li>{{place}}</li>
+      {% endfor %}
+    </ul>
      
   
   </div>

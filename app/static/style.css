@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 h1 {
     font-size: 4em;
@@ -36,15 +38,4 @@ input {
     border-image: 0;
     border-radius: 5px;
     font-family: 'Montserrat Alternates', sans-serif;
-}
-
-form {
-    font-family: 'Montserrat Alternates', sans-serif;
-}
-
-
-div {
-    width: 60px;
-    height: 60px;
-    border: 1px solid black;
 }

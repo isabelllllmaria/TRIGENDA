@@ -4,7 +4,7 @@ from app.models import model, formopener
 import random
 
 @app.route('/')
-@app.route('/index')
+@app.route('/index', methods=['GET', 'POST'])
 def index():
     randomCity = model.cities[random.randint(0, len(model.cities)-1)]
     randomCityUrl = model.SHOW_IMG(randomCity)
@@ -22,6 +22,7 @@ def results():
         toDo = model.my_destination(city)
         toEat = model.my_restaurants(city)
         currency = model.my_currency(city)
+        toStay = model.my_hotels(city)
         img_url = model.SHOW_IMG(city)
         print(toDo)
-        return render_template("results.html", a= city, b = toDo, c=img_url, d= toEat, e= currency)
+        return render_template("results.html", a= city, b = toDo, c=img_url, d= toEat, e= currency, f= toStay)
