@@ -8,7 +8,7 @@ import random
 def index():
     randomCity = model.cities[random.randint(0, len(model.cities)-1)]
     randomCityUrl = model.SHOW_IMG(randomCity)
-    return render_template("index.html", randomCityUrl = randomCityUrl)
+    return render_template("index.html", randomCityUrl = randomCityUrl) 
    
 @app.route('/results', methods=['GET', 'POST'])
 def results():
